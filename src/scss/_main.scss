@@ -5,12 +5,8 @@
   position: relative;
   font-size: 0;
   line-height: 0;
-  overflow: hidden;
   direction: ltr !important; // Ignore global rtl
-  touch-action: none;
   user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
 
   img {
     // Avoid margin top issue (Occur only when margin-top <= -height)
@@ -27,6 +23,7 @@
   }
 }
 
+.cropper-wrap-box,
 .cropper-canvas,
 .cropper-drag-box,
 .cropper-crop-box,
@@ -36,6 +33,10 @@
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.cropper-wrap-box {
+  overflow: hidden;
 }
 
 .cropper-drag-box {
